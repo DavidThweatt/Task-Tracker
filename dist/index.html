@@ -20,25 +20,30 @@
       </div>
     </nav>
     <div class="main-content">
+      <div class="add-btn-div">
+        <button id="addBTN">Add Task</button>
+      </div>
       <div class="new-task-form">
         <form class="task-form">
-          <label for="TaskName">Task name:</label><br />
+          <h3>New Task</h3>
           <input
             type="text"
             id="task-name"
             name="Tname"
-            value="example: Workout"
+            value="e.g. Workout"
           /><br />
-          <label for="Task">Task:</label><br />
           <input
             type="text"
             id="task-info"
             name="Tinfo"
-            value="example: Mile run & 20 push ups"
+            value="e.g. Mile run & 20 push ups"
           /><br /><br />
-          <input type="submit" value="Submit" />
+          <input id="submitBTN" type="submit" value="Submit" />
         </form>
       </div>
     </div>
   </body>
+  <footer>
+    <p id="footerP">Made by David Thweatt</p>
+  </footer>
 </html>

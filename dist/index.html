@@ -15,9 +15,8 @@
           <div class="dropdown">
             <button class="dropbtn">Menu</button>
             <div class="dropdown-content">
-              <a href="#">Today</a>
-              <a href="#">This week</a>
-              <a href="#">This month</a>
+              <a id="task-link" href="#">Task</a>
+              <a id="finished-link" href="#">Finish</a>
             </div>
           </div>
         </nav>
@@ -26,19 +25,21 @@
             <button id="addBTN">Add Task</button>
           </div>
           <div id="new-task-form">
-            <form class="task-form">
+            <form id="task-form">
               <h3 id="formH3">New Task</h3>
               <input
                 type="text"
                 id="task-name"
                 name="Tname"
                 value="e.g. Workout"
+                required
               /><br />
               <input
                 type="text"
                 id="task-info"
                 name="Tinfo"
                 value="e.g. Mile run & 20 push ups"
+                required
               /><br /><br />
               <input id="submitBTN" type="submit" value="Submit" />
             </form>

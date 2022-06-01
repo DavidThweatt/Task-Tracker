@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
-    <title>Document</title>
+    <title>To Do</title>
   </head>
   <body>
     <div id="page-container">
@@ -18,6 +24,9 @@
               <a id="task-link" href="#">Task</a>
               <a id="finished-link" href="#">Finish</a>
             </div>
+          </div>
+          <div class="title_div">
+            <h1 class="title">Task Tracker</h1>
           </div>
         </nav>
         <div id="main-content">
@@ -33,14 +42,12 @@
                 name="Tname"
                 value="e.g. Workout"
                 required
-              /><br />
-              <input
-                type="text"
-                id="task-info"
-                name="Tinfo"
-                value="e.g. Mile run & 20 push ups"
-                required
-              /><br /><br />
+              />
+              <br />
+              <textarea type="text" id="task-info" name="Tinfo" required>
+                e.g. Mile run & 20 push ups
+              </textarea>
+              <br /><br />
               <input id="submitBTN" type="submit" value="Submit" />
             </form>
           </div>
